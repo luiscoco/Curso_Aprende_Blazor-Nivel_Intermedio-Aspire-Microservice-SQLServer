@@ -56,9 +56,3 @@
 ## 10. Running the application
 
 
-
-![image](https://github.com/user-attachments/assets/33a4579a-55da-4644-85f0-e07fe64e676b)
-
-![image](https://github.com/user-attachments/assets/f185ef94-3c41-4b14-9242-b6c6b8173202)
-
-![image](https://github.com/user-attachments/assets/e61d1211-4a81-4520-97f5-ced41d82d622)
