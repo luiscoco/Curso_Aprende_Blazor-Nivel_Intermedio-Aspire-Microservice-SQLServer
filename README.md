@@ -31,6 +31,28 @@
 
 ### 2.6. We create the database in SSMS
 
+```sql
+CREATE DATABASE sqldb
+GO
+
+USE sqldb
+GO
+
+-- Create the ExampleModels table
+CREATE TABLE ExampleModels (
+    Id INT IDENTITY(1, 1) NOT NULL PRIMARY KEY,
+    Name NVARCHAR(100) NOT NULL,
+    Description NVARCHAR(255) NOT NULL,
+    CreatedDate DATETIME2 NOT NULL DEFAULT GETDATE()
+);
+
+-- Insert initial data
+INSERT INTO ExampleModels (Name, Description, CreatedDate)
+VALUES
+    ('Sample Name 1', 'Sample Description 1', '2024-01-10 22:50:19.1711895'),
+    ('Sample Name 2', 'Sample Description 2', '2024-01-10 22:50:19.1711946');
+```
+
 
 ## 3. We add the Aspire Host project
 
