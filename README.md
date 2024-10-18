@@ -570,31 +570,35 @@ app.MapControllers();
 app.Run();
 ```
 
-## 3. We add the Aspire Host project
-
-
-## 4. We add the ServiceDefaults project
-
-
-## 5. We add .NET Aspire Orchestrator support in the .NET Web API project
-
-
-## 6. We add .NET Aspire Orchestrator support in the Blazor Web project
-
-
-## 7. We modify the Aspire Host project middleware to add SQL Server and Database
-
-
-## 8. We modify the .NET Web API project middleware to add the SQL Server DbContext
-
-## 9 Set the SQL Server database connection string in appSettings.json in the .NET Web API project
+## 3. We configure the StartUp project and Run the application
 
 
 
-## 10. Running the application
+## 4. We add the Aspire Host project
 
 
-### 10.1. We run the application
+## 5. We add the ServiceDefaults project
+
+
+## 6. We add .NET Aspire Orchestrator support in the .NET Web API project
+
+
+## 7. We add .NET Aspire Orchestrator support in the Blazor Web project
+
+
+## 8. We modify the Aspire Host project middleware to add SQL Server and Database
+
+
+## 9. We modify the .NET Web API project middleware to add the SQL Server DbContext
+
+## 10 Set the SQL Server database connection string in appSettings.json in the .NET Web API project
+
+
+
+## 11. Running the application
+
+
+### 11.1. We run the application
 
 
 
