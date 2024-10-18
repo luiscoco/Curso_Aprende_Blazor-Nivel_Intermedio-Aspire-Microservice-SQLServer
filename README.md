@@ -291,19 +291,43 @@ await builder.Build().RunAsync();
 
 ## 2. Create .NET Core Web API application
 
+This is the project folders and files structure
 
+![image](https://github.com/user-attachments/assets/2d793140-d7ad-4c1f-a044-c2390882f848)
 
 ### 2.1. We create new folders (Controllers, Data, Models and Services) 
 
+![image](https://github.com/user-attachments/assets/a4498ef6-30e3-44d6-9849-2e63324b92c5)
+
 ### 2.2. We load the Nuget packages
+
+![image](https://github.com/user-attachments/assets/8d19ea40-c4e6-4260-917a-86f2af646f14)
 
 ### 2.3. We create the Data Model
 
-### 2.4. We create the SQL Service CRUD Service
+```csharp
 
-### 2.5. We create the Service
+```
 
-### 2.6. We create the database in SSMS
+### 2.4. We create the SQL CRUD Service
+
+```charp
+
+```
+
+
+### 2.7. We create the Migration
+
+```
+Add-Migration DatabaseInitialization
+```
+
+```
+Upadate-Database
+```
+
+
+### We create the database in SSMS
 
 ```sql
 CREATE DATABASE sqldb
