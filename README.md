@@ -480,6 +480,27 @@ Then
 Upadate-Database
 ```
 
+## 2.8 We modify the Web API middleware 
+
+We have to include the DbContext (EntityFramework reference in the application)
+
+```
+
+```
+
+We have to register the CRUD operations Service
+
+```
+
+```
+
+We also have to reference the connection string
+
+```
+
+```
+
+See the whole middleware Program.cs code:
 
 
 
