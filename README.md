@@ -293,7 +293,7 @@ await builder.Build().RunAsync();
 
 
 
-### 2.1. We create new folders (Controllers, Data, Migrations, Models and Services) 
+### 2.1. We create new folders (Controllers, Data, Models and Services) 
 
 ### 2.2. We load the Nuget packages
 
