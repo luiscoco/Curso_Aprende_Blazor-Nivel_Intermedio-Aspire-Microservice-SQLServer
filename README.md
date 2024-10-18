@@ -478,11 +478,21 @@ We verify the Migrations were created
 
 ![image](https://github.com/user-attachments/assets/0cc6d296-4b39-482f-9351-d63b4e33d97b)
 
-Then 
+Then run this command to apply the migrations changes in the database
 
 ```
 Upadate-Database
 ```
+
+![image](https://github.com/user-attachments/assets/c3682522-ada1-45a3-8003-bde83dcd7b4f)
+
+We connect to the database in SSMS and confirm the migrations were applied
+
+![image](https://github.com/user-attachments/assets/69f6c637-9776-4b85-90e3-0e41abae3e9e)
+
+![image](https://github.com/user-attachments/assets/91fcc36f-f614-4938-8e5c-68193f58cfd3)
+
+![image](https://github.com/user-attachments/assets/1407646c-44fa-4cbe-a1f4-f4796690bde9)
 
 ## 2.8 We modify the Web API middleware 
 
