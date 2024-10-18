@@ -422,9 +422,59 @@ namespace AzureSQLWebAPIMicroservice.Services
 
 ### 2.7. We create the Migration
 
+As first step is required to **Run Docker Desktop** and **run SQL Server docker container** with this command:
+
+```
+docker run ^  -e "ACCEPT_EULA=Y" ^  -e "MSSQL_SA_PASSWORD=Luiscoco123456" ^  -p 1433:1433 ^  -d mcr.microsoft.com/mssql/server:2022-latest
+```
+
+![image](https://github.com/user-attachments/assets/ea27877a-30d6-4cac-a64e-c9abee749856)
+
+IMPORTANT NOTE: we run the SQL Server docker container with the **password Luiscoco123456** and in the **port 1433**
+
+We verify SQL Server docker container is running:
+
+![image](https://github.com/user-attachments/assets/038eb540-0c28-440e-9238-84bc4be398c9)
+
+![image](https://github.com/user-attachments/assets/45dd3b5f-bcf5-41ed-89f5-a7e240b35bae)
+
+We can also connect in **SSMS** to the SQL Server database docker container
+
+![image](https://github.com/user-attachments/assets/39509732-7832-4960-a2dc-a989b4e8045c)
+
+![image](https://github.com/user-attachments/assets/7bb71418-6088-476b-a7d6-5508b41c93dd)
+
+This is the connection string in **appSettings.json** file
+
+```json
+ "ConnectionStrings": {
+   "sqldata": "Server=127.0.0.1,1433;Database=sqldb;User Id=sa;Password=Luiscoco123456;Trusted_Connection=False;TrustServerCertificate=True;"
+ }
+```
+
+See in the Web API
+
+![image](https://github.com/user-attachments/assets/9829d9ea-9b21-4fed-b796-89fa506b81eb)
+
+We first set the **API project** as the **StartUp project**
+
+![image](https://github.com/user-attachments/assets/1f8e469b-32ce-49b4-ad37-eb94221c693f)
+
+We **open Packages Manager** and run these commands:
+
+![image](https://github.com/user-attachments/assets/54312109-6541-467b-b380-11cc7e8f5c56)
+
+We select API project in the dropdown list
+
+![image](https://github.com/user-attachments/assets/4ebd46bb-105e-4a7d-b048-99eaca821a62)
+
+And we run this command to create the **Migration** folder and files
+
 ```
 Add-Migration DatabaseInitialization
 ```
+
+Then 
 
 ```
 Upadate-Database
