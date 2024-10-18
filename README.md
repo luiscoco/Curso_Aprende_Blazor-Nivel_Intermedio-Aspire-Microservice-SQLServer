@@ -474,6 +474,10 @@ And we run this command to create the **Migration** folder and files
 Add-Migration DatabaseInitialization
 ```
 
+We verify the Migrations were created
+
+![image](https://github.com/user-attachments/assets/0cc6d296-4b39-482f-9351-d63b4e33d97b)
+
 Then 
 
 ```
