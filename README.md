@@ -4,9 +4,17 @@
 
 ## 1. Create a Blazor WebAssembly application
 
+We verify the project folder and files structure
+
+![image](https://github.com/user-attachments/assets/81411a27-74c7-40d9-b629-b6cd7014143b)
+
 ### 1.2. We create the folders (Models and services)
 
+![image](https://github.com/user-attachments/assets/83ba5b9d-ffa4-4d15-81da-db76b140a13b)
+
 ### 1.3. We load the Nuget Packages
+
+![image](https://github.com/user-attachments/assets/4925a6ee-510c-4b63-b3fd-37a7e2025867)
 
 ### 1.4. We add a new razor component for CRUD operations
 
