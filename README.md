@@ -306,7 +306,35 @@ This is the project folders and files structure
 ### 2.3. We create the Data Model
 
 ```csharp
+namespace AzureSQLWebAPIMicroservice.Models
+{
+    public class ExampleModel
+    {
+        public int Id { get; set; }
+        public string? Name { get; set; }
+        public string? Description { get; set; }
+        public DateTime CreatedDate { get; set; }
+    }
+}
+```
 
+
+```csharp
+using Microsoft.EntityFrameworkCore;
+using AzureSQLWebAPIMicroservice.Models;
+
+namespace AzureSQLWebAPIMicroservice.Data
+{
+    public class ExampleDbContext:DbContext
+    {
+        public ExampleDbContext(DbContextOptions<ExampleDbContext> options)
+        : base(options)
+        {
+        }
+
+        public DbSet<ExampleModel> ExampleModels { get; set; }
+    }
+}
 ```
 
 ### 2.4. We create the SQL CRUD Service
