@@ -419,8 +419,7 @@ namespace AzureSQLWebAPIMicroservice.Services
 }
 ```
 
-
-### 2.7. We create the Migration
+### 2.7. We create the Database Migration
 
 As first step is required to **Run Docker Desktop** and **run SQL Server docker container** with this command:
 
@@ -586,9 +585,37 @@ app.Run();
 
 ## 3. We configure the StartUp project and Run the application
 
+We configure the startup projects
 
+![image](https://github.com/user-attachments/assets/186341d8-01e0-4ff5-aac6-f0be595613dc)
+
+![image](https://github.com/user-attachments/assets/0d9d8274-ae5e-458b-8133-8b1534fd783e)
+
+We run the applicagion
+
+![image](https://github.com/user-attachments/assets/415c7396-e1ac-4fe4-aaaf-e1b642ddd6d5)
+
+![image](https://github.com/user-attachments/assets/bbf10a6c-583c-4ffa-a041-dd861bb01726)
+
+![image](https://github.com/user-attachments/assets/7390a559-a8e4-483c-b474-27af6296f6c2)
+
+Now we create new items 
+
+![image](https://github.com/user-attachments/assets/d4dd9b62-7c4e-49b8-8a6c-0f375002cbc8)
+
+![image](https://github.com/user-attachments/assets/08e4ab32-157c-4aeb-bc46-91009533cf32)
+
+![image](https://github.com/user-attachments/assets/5813aada-0182-4f21-a805-69f87c0d8dcc)
+
+We confirm in SSMS
+
+![image](https://github.com/user-attachments/assets/7f9d4814-240f-46c1-a22e-faac211c4e0e)
+
+Note: the Id is 2 because when creating this document I previously created an Item and I deleted it
 
 ## 4. We add the Aspire Host project
+
+
 
 
 ## 5. We add the ServiceDefaults project
