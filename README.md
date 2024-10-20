@@ -408,6 +408,20 @@ namespace AzureSQLWebAPIMicroservice.Data
 
 ### 2.4. We create the SQL CRUD Service
 
+The ExampleModelService class encapsulates the logic for interacting with the database for the ExampleModel entity
+
+It supports CRUD operations:
+
+Create (AddExampleModel) adds a new model to the database
+
+Read (GetAllExampleModels and GetExampleModelById) fetches records from the database
+
+Update (UpdateExampleModel) modifies an existing record
+
+Delete (DeleteExampleModel) removes a record from the database
+
+This service simplifies database interaction for other parts of the application and ensures that changes are handled efficiently and asynchronously
+
 ```charp
 using AzureSQLWebAPIMicroservice.Data;
 using AzureSQLWebAPIMicroservice.Models;
@@ -498,7 +512,7 @@ docker run ^  -e "ACCEPT_EULA=Y" ^  -e "MSSQL_SA_PASSWORD=Luiscoco123456" ^  -p 
 
 ![image](https://github.com/user-attachments/assets/ea27877a-30d6-4cac-a64e-c9abee749856)
 
-IMPORTANT NOTE: we run the SQL Server docker container with the **password Luiscoco123456** and in the **port 1433**
+**IMPORTANT NOTE**: we run the SQL Server docker container with the **password Luiscoco123456** and in the **port 1433**
 
 We verify SQL Server docker container is running:
 
