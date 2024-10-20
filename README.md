@@ -716,12 +716,34 @@ We select the .NET9 framework and press the Create button
 
 See the new project folders and files structure
 
+![image](https://github.com/user-attachments/assets/609197c1-2e4b-4106-9bda-ca38441e8302)
 
+![image](https://github.com/user-attachments/assets/2007f834-81dc-436f-b137-ee404ed36011)
 
 ## 5. We add the ServiceDefaults project
 
+We add a new project in the solution
+
+![image](https://github.com/user-attachments/assets/df6aa532-ad41-4f2a-b81d-380d83639fb8)
+
+We select the Aspire .NET Service Default project template
+
+![image](https://github.com/user-attachments/assets/87f8b2ce-3042-4eaa-9568-2510f30f4e84)
+
+We input the project name and location
+
+![image](https://github.com/user-attachments/assets/49962b3f-ad0a-454f-8adc-9f05b4963f6c)
+
+We select the .NET9 framework and press the Create button
+
+![image](https://github.com/user-attachments/assets/f8b18c56-5cd8-41d8-a30e-9f6cba07eacb)
+
+We verify the new projecr folders and files structure
+
+![image](https://github.com/user-attachments/assets/a06e4e0e-b907-4f69-848c-be8ee3a9251e)
 
 ## 6. We add .NET Aspire Orchestrator support in the .NET Web API project
+
 
 
 ## 7. We add .NET Aspire Orchestrator support in the Blazor Web project
