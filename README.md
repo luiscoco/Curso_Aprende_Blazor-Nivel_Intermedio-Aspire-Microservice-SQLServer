@@ -910,6 +910,8 @@ VALUES
 
 We verify the above queries were run successfully
 
+![image](https://github.com/user-attachments/assets/1a68ce3f-bf5e-45be-be50-d9bdff2a1f84)
+
 ![image](https://github.com/user-attachments/assets/7d1d6b2c-37dd-4be8-a9d0-f2a46d39f1b1)
 
 ### 10.2. We run the application
