@@ -748,7 +748,7 @@ We verify the new projecr folders and files structure
 
 We confirm the new project was added in the Aspire Host middleware
 
-![image](https://github.com/user-attachments/assets/2222ab00-cf0a-4ef9-a635-2e124fc38197)
+![image](https://github.com/user-attachments/assets/cbb0e995-118c-4887-af5b-f6e1fa96be69)
 
 ## 7. We add .NET Aspire Orchestrator support in the Blazor Web project
 
@@ -756,14 +756,72 @@ We confirm the new project was added in the Aspire Host middleware
 
 We confirm the new project was added in the Aspire Host middleware
 
+![image](https://github.com/user-attachments/assets/9512407a-e9d7-4d3f-8462-8c0f98344af4)
+
+## 8. We modify the Aspire Host project middleware
+
+We first set the Database password
+
+```
+var sqlPassword = builder.AddParameter("sql-password");
+```
+
+We register and configure the SqlServer project
+
+```
+var sqldb = builder.AddSqlServer("sql", sqlPassword, port: 1234)
+                       .WithDataVolume("MyDataVolume").AddDatabase("Database");
+```
+
+We register and configure the Web API project
+
+```
+var northernTradersCatalogAPI = builder.AddProject<Microservice_AzureSQL>("microservice-azuresql")
+                                       .WithExternalHttpEndpoints()
+                                       .WithReference(sqldb);
+```
+
+We register and configure the Migration project
+
+```
+builder.AddProject<DatabaseMigrations_MigrationService>("migration")
+       .WithReference(sqldb);
+```
+
+We register and configure the FronT-End project
+
+```
+builder.AddProject<BlazorWebAssemblyUI>("blazorwebassemblyui").WithReference(sqldb);
+```
+
+See the middleware whole code:
+
+```csharp
+using Aspire.Hosting; // Ensure this namespace is correct
+using Projects; // Make sure you're referencing the correct project namespace
+
+var builder = DistributedApplication.CreateBuilder(args);
+
+var sqlPassword = builder.AddParameter("sql-password");
+
+var sqldb = builder.AddSqlServer("sql", sqlPassword, port: 1234)
+                       .WithDataVolume("MyDataVolume").AddDatabase("Database");
+
+var northernTradersCatalogAPI = builder.AddProject<Microservice_AzureSQL>("microservice-azuresql")
+                                       .WithExternalHttpEndpoints()
+                                       .WithReference(sqldb);
+
+builder.AddProject<DatabaseMigrations_MigrationService>("migration")
+       .WithReference(sqldb);
+
+builder.AddProject<BlazorWebAssemblyUI>("blazorwebassemblyui").WithReference(sqldb);
+
+builder.Build().Run();
+```
 
 
-## 8. We modify the Aspire Host project middleware to add SQL Server and Database
 
-
-## 9. We modify the .NET Web API project middleware to add the SQL Server DbContext
-
-## 10 Set the SQL Server database connection string in appSettings.json in the .NET Web API project
+## 9. Set the SQL Server database connection string in appSettings.json in the .NET Web API project
 
 
 
