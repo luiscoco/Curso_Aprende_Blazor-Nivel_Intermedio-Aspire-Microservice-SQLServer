@@ -698,6 +698,23 @@ Note: the Id is 2 because when creating this document I previously created an It
 
 ## 4. We add the Aspire Host project
 
+We add a new project in the solution
+
+![image](https://github.com/user-attachments/assets/acd642f9-4c84-43bb-8b56-f30fc7c7097d)
+
+We select the Aspire Host .NET9 project template and we press the Next button
+
+![image](https://github.com/user-attachments/assets/17065022-f7ff-43ca-a291-c524bc3475ea)
+
+We input the project name and location and press the Next button
+
+![image](https://github.com/user-attachments/assets/37ed5bdc-250c-47b7-a3b7-86a6d433a971)
+
+We select the .NET9 framework and press the Create button
+
+![image](https://github.com/user-attachments/assets/76a3527d-ba1d-47b6-bc70-e202e4a72624)
+
+See the new project folders and files structure
 
 
 
