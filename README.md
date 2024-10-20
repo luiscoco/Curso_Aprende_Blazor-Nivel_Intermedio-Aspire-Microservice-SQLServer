@@ -780,7 +780,7 @@ We register and configure the **SqlServer** database
 
 ```
 var sqldb = builder.AddSqlServer("sql", sqlPassword, port: 1234)
-                       .WithDataVolume("MyDataVolume").AddDatabase("Database");
+                       .WithDataVolume("MyDataVolume").AddDatabase("sqldb");
 ```
 
 We register and configure the **Web API** project
@@ -808,7 +808,7 @@ var builder = DistributedApplication.CreateBuilder(args);
 var sqlPassword = builder.AddParameter("sql-password");
 
 var sqldb = builder.AddSqlServer("sql", sqlPassword, port: 1234)
-                       .WithDataVolume("MyDataVolume").AddDatabase("Database");
+                       .WithDataVolume("MyDataVolume").AddDatabase("sqldb");
 
 var northernTradersCatalogAPI = builder.AddProject<Microservice_AzureSQL>("microservice-azuresql")
                                        .WithExternalHttpEndpoints()
@@ -831,7 +831,7 @@ builder.Build().Run();
   },
   "AllowedHosts": "*",
   "ConnectionStrings": {
-    "sqldata": "Server=127.0.0.1,1234;Database=Database;User Id=sa;Password=Luis9876;Trusted_Connection=False;TrustServerCertificate=True;"
+    "sqldata": "Server=127.0.0.1,1234;Database=sqldb;User Id=sa;Password=Luis9876;Trusted_Connection=False;TrustServerCertificate=True;"
   }
 }
 ```
@@ -858,7 +858,7 @@ We have to consider the paramters in the connection string **appsettings.json** 
 
 ```json
  "ConnectionStrings": {
-   "sqldata": "Server=127.0.0.1,1234;Database=Database;User Id=sa;Password=Luis9876;Trusted_Connection=False;TrustServerCertificate=True;"
+   "sqldata": "Server=127.0.0.1,1234;sqldb=Database;User Id=sa;Password=Luis9876;Trusted_Connection=False;TrustServerCertificate=True;"
  }
 ```
 
@@ -879,7 +879,7 @@ Instead of migrating the dagabase we **create the database**, **create the table
 We first create the database and use it
 
 ```sql
-CREATE DATABASE Database
+CREATE DATABASE sqldb
 GO
 
 USE sqldb
