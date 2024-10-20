@@ -819,16 +819,29 @@ builder.AddProject<BlazorWebAssemblyUI>("blazorwebassemblyui").WithReference(sql
 builder.Build().Run();
 ```
 
-
-
 ## 9. Set the SQL Server database connection string in appSettings.json in the .NET Web API project
 
+```json
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "sqldata": "Server=127.0.0.1,1234;Database=Database;User Id=sa;Password=Luis9876;Trusted_Connection=False;TrustServerCertificate=True;"
+  }
+}
+```
+
+## 10. Running the application
 
 
-## 11. Running the application
 
 
-### 11.1. We run the application
+### 10.1. We run the application
 
 
 
