@@ -313,7 +313,7 @@ builder.Services.AddScoped<ExampleModelService>();
 await builder.Build().RunAsync();
 ```
 
-### 1.6. We modify the NavMenu.razor 
+### 1.6. We modify the NavMenu.razor component to navigate to the new razor component in section 1.5
 
 ```razor
  <div class="nav-item px-3">
@@ -324,6 +324,22 @@ await builder.Build().RunAsync();
 ```
 
 ## 2. Create .NET Core Web API application
+
+We run Visual Studio 2022 and create a new project
+
+![image](https://github.com/user-attachments/assets/8a267524-e858-4f0b-ad30-ff37d5bc403d)
+
+We select the  project template ASP.NET Core Web API
+
+![image](https://github.com/user-attachments/assets/584955c3-b6ab-45fb-9200-22b877cde646)
+
+We input the project name and location
+
+![image](https://github.com/user-attachments/assets/3a32f1ae-593d-4a44-9b19-0f71f579c08f)
+
+We select the .NET9 framework and press the Create button
+
+![image](https://github.com/user-attachments/assets/4fab5bd7-1a34-42f2-ac56-63138d49740b)
 
 This is the project folders and files structure
 
