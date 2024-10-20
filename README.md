@@ -879,7 +879,7 @@ Instead of migrating the dagabase we **create the database**, **create the table
 We first create the database and use it
 
 ```sql
-CREATE DATABASE sqldb
+CREATE DATABASE Database
 GO
 
 USE sqldb
@@ -908,5 +908,23 @@ VALUES
     ('Sample Name 2', 'Sample Description 2', '2024-01-10 22:50:19.1711946');
 ```
 
+We verify the above queries were run successfully
+
+![image](https://github.com/user-attachments/assets/9ae1448b-c650-4498-88b4-5fff77176945)
+
 ### 10.2. We run the application
+
+We open the application Dashboard
+
+https://localhost:17175/
+
+![image](https://github.com/user-attachments/assets/69b39042-4399-4d23-8008-b29cc73b5444)
+
+We also access the Web API
+
+https://localhost:7217/swagger/index.html
+
+![image](https://github.com/user-attachments/assets/1672f33b-4887-4998-b907-d45a9036d476)
+
+We also access the Application
 
