@@ -6,7 +6,23 @@
 
 We verify the project folder and files structure
 
-![image](https://github.com/user-attachments/assets/81411a27-74c7-40d9-b629-b6cd7014143b)
+![image](https://github.com/user-attachments/assets/8feb95cc-b7d3-4c65-bdd8-ec51f7a10355)
+
+We select the Blazor WebAssembly project template
+
+![image](https://github.com/user-attachments/assets/20bf4dbd-eed9-4645-8d54-8976ee85b6ba)
+
+We input the project name and folder in the hard disk, and press the Next button
+
+![image](https://github.com/user-attachments/assets/30c7d13d-6482-46d7-a21c-b85794e3211f)
+
+We select the .NET 9 framework and press the Create button
+
+![image](https://github.com/user-attachments/assets/d6a32eb1-ce9c-4cf8-9af0-162b3e69ecd9)
+
+We see the project folders and files structure
+
+![image](https://github.com/user-attachments/assets/66e52bff-bbc5-4090-913f-401fdcbf4ae1)
 
 ### 1.2. We create Data Model and the CRUD Service
 
