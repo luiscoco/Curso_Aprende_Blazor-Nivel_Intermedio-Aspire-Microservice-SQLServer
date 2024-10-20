@@ -26,6 +26,20 @@ We see the project folders and files structure
 
 ![image](https://github.com/user-attachments/assets/83ba5b9d-ffa4-4d15-81da-db76b140a13b)
 
+This folder typically contains classes that represent the data structure (models) used throughout the application
+
+The ExampleModel class is a simple model that represents an entity with four properties:
+
+**Id** (an integer identifier)
+
+**Name** (optional string for the name)
+
+**Description** (optional string for the description)
+
+**CreatedDate** (a DateTime indicating when the object was created)
+
+This class would typically be used to pass data around within a Blazor WebAssembly application, such as between components or to/from an API
+
 ```csharp
 namespace BlazorWebAssemblyUI.Models
 {
@@ -39,6 +53,12 @@ namespace BlazorWebAssemblyUI.Models
     }
 }
 ```
+
+This service (ExampleModelService) acts as a bridge between the Blazor WebAssembly front end and the API back end
+
+It provides methods to perform CRUD operations (create, read, update, delete) on ExampleModel objects by sending HTTP requests to the API
+
+Each method uses async/await for asynchronous operations, ensuring the application remains responsive while waiting for API responses
 
 ```csharp
 using BlazorWebAssemblyUI.Models;
