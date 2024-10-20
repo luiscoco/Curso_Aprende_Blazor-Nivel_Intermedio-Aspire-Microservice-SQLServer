@@ -850,7 +850,7 @@ We also defined a Volume for assuring the data persistance
 
 ![image](https://github.com/user-attachments/assets/4b5adb5a-9024-443a-b31d-adb6fd944d04)
 
-### 10.1. We connect to the Sql container with SSMS and we create the database
+### 10.1. We connect to the Sql container with SSMS and we create the database and seed with data
 
 We connect to the SQL Server docker container with **SSMS**
 
@@ -870,9 +870,13 @@ We also select the **Trusted Certificate** option
 
 ![image](https://github.com/user-attachments/assets/e804ec90-113e-47f0-a2f4-e73fa0c79b01)
 
-### 10.2. We run the application
+We verify the database connection
 
-Instead of migrating the dagabase we create the database, create the table and seed with data with sql queries:
+![image](https://github.com/user-attachments/assets/b93c6a83-60f2-495f-a4d4-1e3dc9fc299b)
+
+Instead of migrating the dagabase we **create the database**, **create the table** and **seed with data** with sql queries:
+
+We first create the database and use it
 
 ```sql
 CREATE DATABASE sqldb
@@ -880,7 +884,11 @@ GO
 
 USE sqldb
 GO
+```
 
+We create the table
+
+```sql
 -- Create the ExampleModels table
 CREATE TABLE ExampleModels (
     Id INT IDENTITY(1, 1) NOT NULL PRIMARY KEY,
@@ -888,10 +896,17 @@ CREATE TABLE ExampleModels (
     Description NVARCHAR(255) NOT NULL,
     CreatedDate DATETIME2 NOT NULL DEFAULT GETDATE()
 );
+```
 
+We seed the table with data
+
+```sql
 -- Insert initial data
 INSERT INTO ExampleModels (Name, Description, CreatedDate)
 VALUES
     ('Sample Name 1', 'Sample Description 1', '2024-01-10 22:50:19.1711895'),
     ('Sample Name 2', 'Sample Description 2', '2024-01-10 22:50:19.1711946');
 ```
+
+### 10.2. We run the application
+
