@@ -744,7 +744,11 @@ We verify the new projecr folders and files structure
 
 ## 6. We add .NET Aspire Orchestrator support in the .NET Web API project
 
+![image](https://github.com/user-attachments/assets/947ad58d-dd02-45cc-a344-c15d786a6945)
 
+We confirm the new project was added in the Aspire Host middleware
+
+![image](https://github.com/user-attachments/assets/2222ab00-cf0a-4ef9-a635-2e124fc38197)
 
 ## 7. We add .NET Aspire Orchestrator support in the Blazor Web project
 
