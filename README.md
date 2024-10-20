@@ -910,7 +910,7 @@ VALUES
 
 We verify the above queries were run successfully
 
-![image](https://github.com/user-attachments/assets/9ae1448b-c650-4498-88b4-5fff77176945)
+![image](https://github.com/user-attachments/assets/7d1d6b2c-37dd-4be8-a9d0-f2a46d39f1b1)
 
 ### 10.2. We run the application
 
@@ -926,5 +926,9 @@ https://localhost:7217/swagger/index.html
 
 ![image](https://github.com/user-attachments/assets/1672f33b-4887-4998-b907-d45a9036d476)
 
+![image](https://github.com/user-attachments/assets/adff93a9-5f68-4707-91d0-7f171604bc80)
+
 We also access the Application
+
+![image](https://github.com/user-attachments/assets/c0300f2b-3b69-4eb7-9dda-b3e81a565d34)
 
