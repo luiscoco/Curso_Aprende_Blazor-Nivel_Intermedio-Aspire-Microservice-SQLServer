@@ -674,7 +674,7 @@ We configure the startup projects
 
 ![image](https://github.com/user-attachments/assets/0d9d8274-ae5e-458b-8133-8b1534fd783e)
 
-We run the applicagion
+We run the application
 
 ![image](https://github.com/user-attachments/assets/415c7396-e1ac-4fe4-aaaf-e1b642ddd6d5)
 
@@ -753,6 +753,12 @@ And also we verify in the Web API project the reference to the Aspire .NET Servi
 We confirm the new project was added in the Aspire Host middleware
 
 ![image](https://github.com/user-attachments/assets/b68239ee-0f40-4e6e-8e67-211b130df6bf)
+
+We also confirm the Web API middleware was modified
+
+![image](https://github.com/user-attachments/assets/4ea3988c-404a-4e4b-930a-f5773be6eae4)
+
+![image](https://github.com/user-attachments/assets/a6b1fc8a-71ae-4c7e-bea6-4025f79a1ead)
 
 ## 7. We add .NET Aspire Orchestrator support in the Blazor Web project
 
@@ -839,6 +845,10 @@ We verify in Docker Desktop
 ![image](https://github.com/user-attachments/assets/961d0796-1184-44d0-9682-e725bbd632ff)
 
 ![image](https://github.com/user-attachments/assets/3031dd32-775f-4904-8840-5e03d6814227)
+
+We also defined a Volume for assuring the data persistance
+
+![image](https://github.com/user-attachments/assets/4b5adb5a-9024-443a-b31d-adb6fd944d04)
 
 ### 10.1. We connect to the Sql container with SSMS and we create the database
 
