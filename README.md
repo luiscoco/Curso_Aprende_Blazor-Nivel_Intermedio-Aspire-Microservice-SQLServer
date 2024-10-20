@@ -355,6 +355,18 @@ This is the project folders and files structure
 
 ### 2.3. We create the Data Model
 
+The ExampleModel class is a simple C# model representing a data entity with four properties:
+
+Id (an integer identifier)
+
+Name (an optional string)
+
+Description (an optional string)
+
+CreatedDate (a DateTime object for when the entity was created)
+
+This class would be used in an Azure SQL Web API microservice to define how data is structured, typically when retrieving or storing information in a database through API endpoints
+
 ```csharp
 namespace AzureSQLWebAPIMicroservice.Models
 {
@@ -368,6 +380,13 @@ namespace AzureSQLWebAPIMicroservice.Models
 }
 ```
 
+The ExampleDbContext class is an Entity Framework Core database context that represents a session with the database
+
+It has a constructor that accepts configuration options (like the connection string), allowing the application to connect to an Azure SQL database
+
+The DbSet<ExampleModel> property maps the ExampleModel class to the corresponding table in the database (ExampleModels), enabling the application to perform CRUD operations (Create, Read, Update, Delete) on that table
+
+In essence, this class acts as the bridge between the application's code and the underlying database
 
 ```csharp
 using Microsoft.EntityFrameworkCore;
