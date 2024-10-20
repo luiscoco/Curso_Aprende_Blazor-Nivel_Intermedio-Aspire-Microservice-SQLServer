@@ -752,6 +752,11 @@ We confirm the new project was added in the Aspire Host middleware
 
 ## 7. We add .NET Aspire Orchestrator support in the Blazor Web project
 
+![image](https://github.com/user-attachments/assets/70471491-dc3d-42c8-812b-5e8650cc1044)
+
+We confirm the new project was added in the Aspire Host middleware
+
+
 
 ## 8. We modify the Aspire Host project middleware to add SQL Server and Database
 
