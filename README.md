@@ -742,6 +742,10 @@ We verify the new projecr folders and files structure
 
 ![image](https://github.com/user-attachments/assets/a06e4e0e-b907-4f69-848c-be8ee3a9251e)
 
+And also we verify in the Web API project the reference to the Aspire .NET Service Default projec
+
+![image](https://github.com/user-attachments/assets/34498001-d2bd-4de1-bcf8-9606ee12a03e)
+
 ## 6. We add .NET Aspire Orchestrator support in the .NET Web API project
 
 ![image](https://github.com/user-attachments/assets/947ad58d-dd02-45cc-a344-c15d786a6945)
