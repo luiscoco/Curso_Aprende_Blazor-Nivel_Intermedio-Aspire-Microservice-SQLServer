@@ -748,7 +748,7 @@ We verify the new projecr folders and files structure
 
 We confirm the new project was added in the Aspire Host middleware
 
-![image](https://github.com/user-attachments/assets/cbb0e995-118c-4887-af5b-f6e1fa96be69)
+![image](https://github.com/user-attachments/assets/b68239ee-0f40-4e6e-8e67-211b130df6bf)
 
 ## 7. We add .NET Aspire Orchestrator support in the Blazor Web project
 
@@ -756,24 +756,24 @@ We confirm the new project was added in the Aspire Host middleware
 
 We confirm the new project was added in the Aspire Host middleware
 
-![image](https://github.com/user-attachments/assets/9512407a-e9d7-4d3f-8462-8c0f98344af4)
+![image](https://github.com/user-attachments/assets/6799448f-5d37-4526-b117-1348b67ccd8b)
 
 ## 8. We modify the Aspire Host project middleware
 
-We first set the Database password
+We first set the **Database Password**
 
 ```
 var sqlPassword = builder.AddParameter("sql-password");
 ```
 
-We register and configure the SqlServer project
+We register and configure the **SqlServer** database
 
 ```
 var sqldb = builder.AddSqlServer("sql", sqlPassword, port: 1234)
                        .WithDataVolume("MyDataVolume").AddDatabase("Database");
 ```
 
-We register and configure the Web API project
+We register and configure the **Web API** project
 
 ```
 var northernTradersCatalogAPI = builder.AddProject<Microservice_AzureSQL>("microservice-azuresql")
@@ -781,14 +781,7 @@ var northernTradersCatalogAPI = builder.AddProject<Microservice_AzureSQL>("micro
                                        .WithReference(sqldb);
 ```
 
-We register and configure the Migration project
-
-```
-builder.AddProject<DatabaseMigrations_MigrationService>("migration")
-       .WithReference(sqldb);
-```
-
-We register and configure the FronT-End project
+We register and configure the **FronT-End** project
 
 ```
 builder.AddProject<BlazorWebAssemblyUI>("blazorwebassemblyui").WithReference(sqldb);
