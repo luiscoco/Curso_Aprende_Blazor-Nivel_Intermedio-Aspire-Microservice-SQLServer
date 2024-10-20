@@ -1,8 +1,6 @@
-# How to create with .NET Aspire a Blazor WebAssambly application consuming a MicroService CRUD SQL Server
+# How to create with Aspire .NET9 Blazor WebAssambly application consuming a MicroService CRUD SQL Server
 
-
-
-## 1. Create a Blazor WebAssembly application
+## 1. Create a Blazor WebAssembly application with Visual Studio 2022
 
 We verify the project folder and files structure
 
