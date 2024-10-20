@@ -838,19 +838,40 @@ builder.Build().Run();
 
 ## 10. Running the application
 
+### 10.1. The SQL Server Docker container is run automatically when you run the application
+
+We verify in Docker Desktop
+
+![image](https://github.com/user-attachments/assets/961d0796-1184-44d0-9682-e725bbd632ff)
+
+![image](https://github.com/user-attachments/assets/3031dd32-775f-4904-8840-5e03d6814227)
+
+### 10.1. We connect to the Sql container with SSMS and we create the database
+
+We connect to the SQL Server docker container with **SSMS**
+
+We have to consider the paramters in the connection string **appsettings.json** file
+
+```json
+ "ConnectionStrings": {
+   "sqldata": "Server=127.0.0.1,1234;Database=Database;User Id=sa;Password=Luis9876;Trusted_Connection=False;TrustServerCertificate=True;"
+ }
+```
+
+See the **SSMS input data**
+
+![image](https://github.com/user-attachments/assets/e162c196-080c-466e-ab2c-dfa6a01e24aa)
+
+We also select the **Trusted Certificate** option
+
+![image](https://github.com/user-attachments/assets/e804ec90-113e-47f0-a2f4-e73fa0c79b01)
 
 
 
-### 10.1. We run the application
 
 
 
-We check the SQL Server docker container is running
-
-
-
-
-### 10.2. We create the database in SSMS
+### 10.2. We run the application
 
 ```sql
 CREATE DATABASE sqldb
