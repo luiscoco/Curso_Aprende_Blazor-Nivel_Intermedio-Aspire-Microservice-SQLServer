@@ -811,9 +811,6 @@ var northernTradersCatalogAPI = builder.AddProject<Microservice_AzureSQL>("micro
                                        .WithExternalHttpEndpoints()
                                        .WithReference(sqldb);
 
-builder.AddProject<DatabaseMigrations_MigrationService>("migration")
-       .WithReference(sqldb);
-
 builder.AddProject<BlazorWebAssemblyUI>("blazorwebassemblyui").WithReference(sqldb);
 
 builder.Build().Run();
@@ -866,12 +863,9 @@ We also select the **Trusted Certificate** option
 
 ![image](https://github.com/user-attachments/assets/e804ec90-113e-47f0-a2f4-e73fa0c79b01)
 
-
-
-
-
-
 ### 10.2. We run the application
+
+Instead of migrating the dagabase we create the database, create the table and seed with data with sql queries:
 
 ```sql
 CREATE DATABASE sqldb
