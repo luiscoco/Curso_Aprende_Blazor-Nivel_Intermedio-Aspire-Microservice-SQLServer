@@ -112,7 +112,7 @@ namespace BlazorWebAssemblyUI.Services
 
 ### 1.3. We load the Nuget Packages
 
-These two packages are automatically loaded in your application when you create it in Visual Studio
+These two packages are automatically loaded in your application when you create a Blazor WebAssembly application in Visual Studio 2022 
 
 ![image](https://github.com/user-attachments/assets/4925a6ee-510c-4b63-b3fd-37a7e2025867)
 
